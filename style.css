@@ -164,11 +164,13 @@ p{
     margin-bottom: 3px;
   }
 
-  
-  
-
   /* footer */
   footer{
     display: flex;
     justify-content: center;
+  }
+
+  /* Thank you page */
+  .thanks{
+    height: 640px;
   }

@@ -39,7 +39,7 @@ body {
   color: black;
   display: contents;
 }
-.text-center, .form-input, .row, .card{
+header, .form-input, .row, .card{
   background-color: #f8f9fa !important
 }
 .card {

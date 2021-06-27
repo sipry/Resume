@@ -1,126 +1,118 @@
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(alina-grubnyak-ZiQkhI7417A-unsplash.jpg);background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(alina-grubnyak-ZiQkhI7417A-unsplash.jpg); 
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
-
-.master-card {
-    width: 70%; 
-    height: auto; 
-    background-color: white; 
-    margin: 0; 
-    position:absolute; 
-    top: 15%; 
-    right: 15%;
-}
-#master-card-contacto{
-    padding-bottom: 45px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img {
-    width: 100%;
+.container{
+  padding-top: 7%;
 }
 
-
-#card-index {
-    padding: 80px;
-    border: none;
+.fa-stream{
+  color: black;
 }
-#card-skills {
-  padding: 61px;
-  border: none;
+.navbar-light .navbar-toggler{
+  border-color: transparent;
+  font-size: 25px;
 }
-
-
-@media screen and (max-width: 700px){
-    #card-skills, #card-index {
-    padding: 20px !important;
-  }
+.btn-dark{
+  background-color: black;
+  margin-bottom: 30px;
 }
 
 .card-title {
-    text-align: center;
-}
-
-.card-text{
-    text-align: center;
+  text-align: center;
 }
 
 .fa-icon.fa-icon-2x{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 30px;
-    color: black;
-    display: contents;
-  }
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  color: black;
+  display: contents;
+}
+.text-center, .form-input, .row, .card{
+  background-color: #f8f9fa !important
+}
+.card {
+  border: none;
+  border-radius: 0;
+}
+hr {
+ 
+  border-top: 1px solid rgba(0,0,0,.1);
+  padding: 0;
+  width: 80%;
+  display: -webkit-inline-box;
+} 
 
 
-/* skills page */
 
-  .skills-ul {
-    padding: 0;
-    margin: 0;
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-  }
+/* index */
 
-  .skills-ul .skills-item {
+.index{
+  padding: 61px;
+}
 
-    margin-top: -1px;   /* Prevent double borders */
-    background-color: #EDEDED;
-    padding: 12px;
-    text-align: center;
-    margin: 20px;
-  }
+img {
+  width: 100%;
+  padding-top: 50px;
+}
+.card-text{
+  text-align: center;
+}
 
-  #card-skills, #carousel-card, #contact-card{
-    padding-bottom: 4.5%; 
-    border: none;
-  }
+/* skills */
+.skills{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+.skills-ul {
+  width: 50%;
+  margin: auto;
+}
 
-  @media screen and (max-width: 700px) {
-    .skills-ul{
-      width: 100%;
-    }
-  }
+.skills-ul .skills-item {
 
-  #row-block {
-    display: block;
-  }
+  background-color: #EDEDED;
+  padding: 12px;
+  text-align: center;
+  margin: 10px;
+}
+
+.skills_row {
+  display: block;
+}
 
   /* projects */
-
+  .projects{
+    padding: 29px;
+  }
+  .row{
+    margin: 0;
+  }
   .carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 20%;
-    bottom: 50%;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 5%;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: 0 0;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    opacity: .5;
-    transition: opacity .15s ease;
-    background-color: gray;
+  top: 20%;
+  bottom: 30%;
+  z-index: 1;
+  width: 5%;
+  background-color: grey;
   }
-
-  #carousel-card {
-    padding-top: 2%;
-    border: none;
+  .arrow{
+    font-size: 40px;;
   }
-
+ 
   #carousel-icon{
-    width: 60px;
+  width: 60px;
   height: 60px;
   line-height: 50px;
   font-size: 40px;
@@ -128,24 +120,36 @@ img {
   display: contents;
   }
 
-#carousel-fab {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.card-body{
+  padding-top: 50px;
+  justify-content: center;
+  display: grid;
 }
 
 .visually-hidden{
   display: none;
 }
-#title-description {
+.title-description {
     padding-bottom: 20px;
 }
-#card-info{
+.card-text{
     padding-bottom: 20px
 }
 
+#carousel-fab {
+  text-align: center;
+  display: block;
+  } 
+
+p{
+  margin: 0;
+} 
+
 /* contacto */
+.contact{
+  padding: 49.5px;
+}
 
 .form-input {
     width: 80%;
@@ -160,35 +164,11 @@ img {
     margin-bottom: 3px;
   }
 
- 
-
-  #btn-contact{
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
+  
+  
 
   /* footer */
   footer{
     display: flex;
     justify-content: center;
-  }
-
-  @media screen and (max-width: 991px){
-    footer{
-      display: none;
-    }
-  }
-
-  #madeby-toggle{
-    text-align: center;
-  }
-
-  #madeby-toggle > a {
-    color: grey;
-  }
-
-  @media screen and (min-width: 991px){
-    #madeby-toggle{
-      display: none;
-    }
   }

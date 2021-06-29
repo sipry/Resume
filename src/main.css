@@ -1,5 +1,6 @@
+
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/alina-grubnyak-ZiQkhI7417A-unsplash.jpg'); 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/index-img.jpg'); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;

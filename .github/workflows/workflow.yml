@@ -3,7 +3,7 @@ name: yonalis.com
 on:
   push:
     branches:
-    - add_webpack
+    - main
 
 jobs:
   deploy:

@@ -8,9 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-    - name: install node
-      run: apt install node
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
     - uses: actions/checkout@master
     - name: install dependancies
       run: npm install

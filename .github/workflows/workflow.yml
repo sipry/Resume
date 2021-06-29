@@ -10,13 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: install node
+    id: step_one
     run: |
       apt install node
     - uses: actions/checkout@master
     - name: install dependancies
+    id: step_two
     run: |
       npm install
     - name: run webpack
+    id: step_three
     run: |
       npm run build
     - uses: jakejarvis/s3-sync-action@master

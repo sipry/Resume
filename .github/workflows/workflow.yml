@@ -2,8 +2,6 @@ name: yonalis.com
 
 on:
   push:
-    branches:
-    - [*]
 
 jobs:
   deploy:
